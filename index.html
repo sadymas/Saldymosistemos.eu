@@ -1,117 +1,94 @@
 <!DOCTYPE html>
 <html lang="lt">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> saldymo sistemos </title></title>
-    <meta name="description" content="Tai yra mano pirmasis tinklalapis, sukurtas naudojant HTML">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            color: #333;
-            background-color: #f4f4f4;
-        }
-        header {
-            background: #35424a;
-            color: #ffffff;
-            padding: 20px 0;
-            text-align: center;
-        }
-        nav {
-            background: #e8491d;
-            padding: 10px 0;
-        }
-        nav ul {
-            padding: 0;
-            list-style: none;
-            text-align: center;
-        }
-        nav li {
-            display: inline;
-            margin: 0 15px;
-        }
-        nav a {
-            color: #ffffff;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
-            padding: 20px 0;
-        }
-        footer {
-            background: #35424a;
-            color: #ffffff;
-            text-align: center;
-            padding: 20px 0;
-            margin-top: 20px;
-        }
-        @media(max-width: 768px) {
-            .container {
-                width: 90%;
-            }
-            nav li {
-                display: block;
-                margin: 10px 0;
-            }
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MB Šaldymo sistemos</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background-color: #1e3a8a;
+      color: white;
+      padding: 20px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    header img {
+      height: 60px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 28px;
+    }
+
+    .container {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #1e3a8a;
+    }
+
+    ul {
+      list-style-type: disc;
+      padding-left: 20px;
+    }
+
+    .contact {
+      background-color: #e0e7ff;
+      padding: 20px;
+      margin-top: 30px;
+      border-radius: 10px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #1e3a8a;
+      color: white;
+      margin-top: 40px;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>MB Šaldymo sistemos</h1>
-            <p> Oro kondicionierių, šilumos siurblių, VRF/VRV sistemų montavimas, priežiūra, remontas.</p>
-        </div>
-    </header>
 
-    <nav>
-        <div class="container">
-            <ul>
-                <li><a href="#">Pagrindinis</a></li>
-                <li><a href="#">Apie mus</a></li>
-                <li><a href="#">Paslaugos</a></li>
-                <li><a href="#">Kontaktai</a></li>
-            </ul>
-        </div>
-    </nav>
+  <header>
+    <img src="logo.png" alt="Šaldymo sistemos logotipas">
+    <h1>ŠALDYMO SISTEMOS</h1>
+  </header>
 
-    <div class="container">
-        <section id="main-content">
-            <h2>Sveiki atvykę</h2>
-            <p>Tai yra mano pirmasis tinklalapis, sukurtas naudojant HTML ir CSS. Čia galite pateikti savo pagrindinę informaciją.</p>
-            
-            <article>
-                <h3>Pirmas straipsnis</h3>
-                <p> </p>
-            </article>
-            
-            <article>
-                <h3>Antras straipsnis</h3>
-                <p>Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum.</p>
-            </article>
-        </section>
+  <div class="container">
+    <h2>Apie mus</h2>
+    <p>MB "Šaldymo sistemos" specializuojasi oro kondicionavimo, šilumos siurblių (oras-vanduo, oras-oras), VRF/VRV sistemų sprendimuose.</p>
 
-        <aside id="sidebar">
-            <h3>Naujienos</h3>
-            <p>Prenumeruokite mūsų naujienlaiškį, kad gautumėte naujausias naujienas!</p>
-            
-            <h3>Nuorodos</h3>
-            <ul>
-                <li><a href="#">Naudinga nuoroda 1</a></li>
-                <li><a href="#">Naudinga nuoroda 2</a></li>
-                <li><a href="#">Naudinga nuoroda 3</a></li>
-            </ul>
-        </aside>
+    <h2>Paslaugos</h2>
+    <ul>
+      <li>Montavimas</li>
+      <li>Priežiūra</li>
+      <li>Remontas</li>
+      <li>Prekyba šilumos siurbliais ir oro kondicionieriais</li>
+    </ul>
+
+    <div class="contact">
+      <h2>Kontaktai</h2>
+      <p>Tel. <strong>+370 695 55121</strong></p>
     </div>
+  </div>
 
-    <footer>
-        <p>Mano Svetainė &copy; 2023. Visos teisės saugomos.</p>
-    </footer>
+  <footer>
+    &copy; 2021 MB Šaldymo sistemos. Visos teisės saugomos.
+  </footer>
+
 </body>
 </html>
