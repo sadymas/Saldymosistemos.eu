@@ -3,25 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Šaldymo Sistemos</title>
+    <title>Mano Pirmasis Tinklalapis</title>
+    <meta name="description" content="Tai yra mano pirmasis tinklalapis, sukurtas naudojant HTML">
     <style>
         body {
             font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #35424a;
+            color: #ffffff;
+            padding: 20px 0;
             text-align: center;
-            padding: 50px;
-            background-color: #f0f4f8;
         }
-        h1 {
-            color: #2c3e50;
+        nav {
+            background: #e8491d;
+            padding: 10px 0;
         }
-        p {
-            color: #34495e;
-            font-size: 18px;
+        nav ul {
+            padding: 0;
+            list-style: none;
+            text-align: center;
+        }
+        nav li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px 0;
+        }
+        footer {
+            background: #35424a;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 20px;
+        }
+        @media(max-width: 768px) {
+            .container {
+                width: 90%;
+            }
+            nav li {
+                display: block;
+                margin: 10px 0;
+            }
         }
     </style>
 </head>
 <body>
-    <h1>Sveiki atvykę į Šaldymo Sistemos!</h1>
-    <p>Oro kondicionierių ir šilumos siurblių montavimas, priežiūra, remontas.</p>
+    <header>
+        <div class="container">
+            <h1>Mano Svetainė</h1>
+            <p>Sveiki atvykę į mano pirmąjį tinklalapį!</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#">Pagrindinis</a></li>
+                <li><a href="#">Apie mus</a></li>
+                <li><a href="#">Paslaugos</a></li>
+                <li><a href="#">Kontaktai</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <section id="main-content">
+            <h2>Sveiki atvykę</h2>
+            <p>Tai yra mano pirmasis tinklalapis, sukurtas naudojant HTML ir CSS. Čia galite pateikti savo pagrindinę informaciją.</p>
+            
+            <article>
+                <h3>Pirmas straipsnis</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula.</p>
+            </article>
+            
+            <article>
+                <h3>Antras straipsnis</h3>
+                <p>Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum.</p>
+            </article>
+        </section>
+
+        <aside id="sidebar">
+            <h3>Naujienos</h3>
+            <p>Prenumeruokite mūsų naujienlaiškį, kad gautumėte naujausias naujienas!</p>
+            
+            <h3>Nuorodos</h3>
+            <ul>
+                <li><a href="#">Naudinga nuoroda 1</a></li>
+                <li><a href="#">Naudinga nuoroda 2</a></li>
+                <li><a href="#">Naudinga nuoroda 3</a></li>
+            </ul>
+        </aside>
+    </div>
+
+    <footer>
+        <p>Mano Svetainė &copy; 2023. Visos teisės saugomos.</p>
+    </footer>
 </body>
 </html>
